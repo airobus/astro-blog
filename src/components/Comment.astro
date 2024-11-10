@@ -1,0 +1,40 @@
+---
+const initTwikoo = `
+  twikoo.init({
+    envId: 'https://twikoo.robus.us.kg',
+    el: '#tcomment',
+  });
+`;
+---
+
+<style is:global>
+    .tk-avatar {
+        align-items: center;
+        display: flex;
+    }
+</style>
+
+<div class="prose max-w-3xl mx-auto px-4">
+    <div id="tcomment" class="comment-container"></div>
+</div>
+
+<script define:vars={{ initTwikoo }}>
+  document.addEventListener('astro:page-load', () => {
+    function loadTwikoo() {
+      const commentsContainer = document.getElementById('tcomment');
+      if (commentsContainer) {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.staticfile.org/twikoo/1.6.32/twikoo.all.min.js';
+        script.async = true;
+        script.onload = () => {
+          const initScript = document.createElement('script');
+          initScript.innerHTML = initTwikoo;
+          document.body.appendChild(initScript);
+        };
+        document.body.appendChild(script);
+      }
+    }
+    loadTwikoo();
+  });
+</script>
+
