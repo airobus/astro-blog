@@ -1,7 +1,7 @@
 import { SITE } from "@config";
 import { glob } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
-
+// 定义博客文章的数据结构和验证规则
 const blog = defineCollection({
   type: "content_layer",
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
