@@ -10,7 +10,7 @@ tags:
   - astro
   - twikoo
 description:
-  在 Astro 中添加 Twikoo 评论系统
+  Add the Twikoo comment system in Astro.
 --- 
 
 上干货，在 src/components 组件目录新建一个 Comment.astro 组件，内容如下：
