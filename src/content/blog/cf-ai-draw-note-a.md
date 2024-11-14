@@ -22,6 +22,10 @@ description:
 
 - [点击访问，别忘了给个鼓励的star](https://github.com/1137882300/cf-ai-pic)
 
+# 项目地址
+
+- [点击尝试](https://ai-drawing.923828.xyz)
+
 # 效果图
 
 ![AI 绘图](https://p.robus.cloudns.be/raw/ai-drawing-24-11-14_compressed.png)
