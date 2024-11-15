@@ -1,7 +1,7 @@
 ---
 author: robus
-pubDatetime: 2024-11-15T15:22:00Z
-modDatetime: 2024-11-15T09:12:47.400Z
+pubDatetime: 2024-11-15 
+modDatetime: 2024-11-15 
 title: 限时注册免费2年域名 .ggff.net
 slug: "112270"
 featured: true
