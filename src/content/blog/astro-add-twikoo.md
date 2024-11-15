@@ -4,7 +4,7 @@ pubDatetime: 2024-11-10T15:22:00Z
 modDatetime: 2024-11-10T09:12:47.400Z
 title: 在 Astro 中添加 Twikoo 评论系统
 slug: "112268"
-featured: true
+featured: false
 draft: false
 tags:
   - astro
