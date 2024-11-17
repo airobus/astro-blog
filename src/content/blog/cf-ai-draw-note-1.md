@@ -2,7 +2,7 @@
 author: robus
 pubDatetime: 2024-11-14T15:22:00Z
 modDatetime: 2024-11-14T09:12:47.400Z
-title: 基于 Cloudflare 实现 AI 绘图
+title: 基于 Cloudflare 实现 AI 绘图(第1版)
 slug: "112269"
 featured: false
 draft: false
