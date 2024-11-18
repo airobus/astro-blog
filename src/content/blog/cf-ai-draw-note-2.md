@@ -1,7 +1,7 @@
 ---
 author: robus
-pubDatetime: 2024-11-14T15:22:00Z
-modDatetime: 2024-11-14T09:12:47.400Z
+pubDatetime: 2024-11-16T15:22:00Z
+modDatetime: 2024-11-16T15:22:00Z
 title: 基于 Cloudflare 实现 AI 绘图(第2版)
 slug: "112272"
 featured: false
