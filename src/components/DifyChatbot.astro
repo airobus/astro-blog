@@ -1,0 +1,68 @@
+---
+const token = 'oqCm6Qh8b0RHtryV';
+---
+<script is:inline define:vars={{token}}>
+  (function() {
+    // 全局单例函数，确保只初始化一次
+    window.initDifyChatbot = function() {
+      // 如果已经初始化，直接返回
+      if (window.difyChatbotInitialized) return;
+
+      // 移除可能存在的旧脚本
+      const oldScript = document.getElementById('dify-chatbot-script');
+      if (oldScript) oldScript.remove();
+
+      // 配置 Dify
+      window.difyChatbotConfig = { token };
+
+      // 动态加载脚本
+      const script = document.createElement('script');
+      script.src = 'https://udify.app/embed.min.js';
+      script.id = 'dify-chatbot-script';
+      script.async = true;
+      document.body.appendChild(script);
+
+      // 标记已初始化
+      window.difyChatbotInitialized = true;
+    };
+
+    // 立即执行初始化
+    window.initDifyChatbot();
+
+    // 监听 Astro 页面加载事件
+    document.addEventListener('astro:page-load', () => {
+      // 延迟初始化，确保 DOM 完全加载
+      setTimeout(window.initDifyChatbot, 100);
+    });
+
+    // 使用 MutationObserver 确保持久性
+    function ensureChatbotPersistence() {
+      const observer = new MutationObserver(() => {
+        const chatbotButton = document.getElementById('dify-chatbot-bubble-button');
+        if (!chatbotButton) {
+          window.initDifyChatbot();
+        }
+      });
+
+      // 观察整个文档
+      observer.observe(document.body, { 
+        childList: true, 
+        subtree: true 
+      });
+    }
+
+    // 启动持久性监控
+    ensureChatbotPersistence();
+  })();
+</script>
+<style is:global>
+  #dify-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+    z-index: 9999 !important;
+  }
+  #dify-chatbot-bubble-window {
+    width: 24rem !important;
+    height: 40rem !important;
+    z-index: 9999 !important;
+  }
+</style> 
