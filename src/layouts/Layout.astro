@@ -2,7 +2,7 @@
 import { LOCALE, SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
-
+import Analytics from '@vercel/analytics/astro';
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export interface Props {
@@ -133,6 +133,7 @@ const structuredData = {
     }
 
     <ViewTransitions />
+    <Analytics />  
 
     <script is:inline src="/toggle-theme.js" async></script>
   </head>
