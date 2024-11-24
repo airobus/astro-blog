@@ -1,0 +1,38 @@
+name: Astro Build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Astro Project
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build the Astro project
+      - name: Build the project
+        run: npm run build
+
+      # Upload the build output as an artifact
+      - name: Upload build output
+        uses: actions/upload-artifact@v3
+        with:
+          name: astro-build-output
+          path: ./dist
