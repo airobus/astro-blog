@@ -32,7 +32,7 @@ jobs:
 
       # Upload the build output as an artifact
       - name: Upload build output
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: astro-build-output
           path: ./dist
