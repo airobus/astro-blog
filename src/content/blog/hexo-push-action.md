@@ -35,7 +35,7 @@ Hexo是一个快速、简洁且高效的博客框架。它使用Markdown（或�
 - 超快速度：Node.js所带来的超快生成速度，让上百个页面在几秒内完成渲染。
 - 支持Markdown：Hexo支持GitHub Flavored Markdown的所有功能，甚至可以整合Octopress的大多数插件。
 - 一键部署：只需一条指令即可部署到GitHub Pages, Heroku或其他网站。
-- 丰富的插件：Hexo拥有强大的插件系统，安装插件可以让Hexo支持Jade, CoffeeScript。
+- 丰富的插件：Hexo拥有强大的插件系统，安装插件可以让Hexo支持 Jade, CoffeeScript。
 
 然而，尽管Hexo本身已经相当便捷，但在实际使用中仍存在一些痛点，这就是我引入GitHub Actions的原因。
 
