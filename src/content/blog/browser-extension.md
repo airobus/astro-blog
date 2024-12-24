@@ -44,21 +44,25 @@ description:
 ![compressed-plug-11.png](https://www.helloimg.com/i/2024/12/06/6751cfd54aec3.png)
 
 ### 1. 极简操作流程
+
 - 选中文本 ➡️ 右键点击 ➡️ 保存完成
 - 无需切换窗口，不打断阅读体验
 - 自动记录网页标题和链接
 
 ### 2. 智能管理功能
+
 - 支持标签分类
 - 可编辑已保存内容
 - 支持搜索和筛选
 
 ### 3. Notion 集成
+
 - 一键同步到指定页面
 - 自动创建目录结构
 - 保持双向同步更新
 
 ### 4. 隐私与安全
+
 - 本地优先存储
 - 数据加密传输
 - 完全控制同步内容
@@ -68,18 +72,21 @@ description:
 ## 一、Chrome 应用商店发布流程
 
 ### 1. 准备开发者账号
+
 - 访问 [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole)
 - 使用 Google 账号登录
 - 支付一次性注册费（$5）
 - 完善开发者信息
 
 ### 2. 打包插件文件
+
 ```bash
 # 将插件目录打包为 zip 文件
 zip -r my-extension.zip * -x "*.git*" -x "node_modules/*"
 ```
 
 ### 3. 准备发布材料
+
 1. **必需材料**
    - 插件图标（128x128 PNG格式）
    - 至少一张清晰的功能截图（1280x800）
@@ -92,6 +99,7 @@ zip -r my-extension.zip * -x "*.git*" -x "node_modules/*"
    - 常见问题解答
 
 ### 4. 提交审核
+
 1. 登录开发者控制台
 2. 点击"新建项目"
 3. 上传 zip 文件
@@ -108,15 +116,18 @@ zip -r my-extension.zip * -x "*.git*" -x "node_modules/*"
 ## 二、Microsoft Edge 应用商店发布流程
 
 ### 1. 准备开发者账号
+
 - 访问 [Microsoft Partner Center](https://partner.microsoft.com/dashboard)
 - 注册开发者账号
 - 完善账号信息
 
 ### 2. 打包插件
+
 - 使用与 Chrome 相同的 zip 包
 - 确保 manifest.json 兼容 Edge
 
 ### 3. 提交流程
+
 1. 登录 Partner Center
 2. 创建新的提交
 3. 上传插件包
@@ -129,6 +140,7 @@ zip -r my-extension.zip * -x "*.git*" -x "node_modules/*"
 ## 三、审核注意事项
 
 ### 1. 常见被拒原因
+
 - 功能描述不清晰
 - 权限请求过多
 - 存在安全隐患
@@ -137,6 +149,7 @@ zip -r my-extension.zip * -x "*.git*" -x "node_modules/*"
 - UI/UX 不符合规范
 
 ### 2. 提高通过率建议
+
 1. **功能完整性**
    - 确保所有声明的功能都能正常工作
    - 提供清晰的功能演示
@@ -159,18 +172,21 @@ zip -r my-extension.zip * -x "*.git*" -x "node_modules/*"
 ## 四、发布后运营
 
 ### 1. 版本更新
+
 - 定期发布更新
 - 修复用户反馈的问题
 - 添加新功能
 - 更新文档和说明
 
 ### 2. 用户支持
+
 - 及时回复用户评论
 - 处理用户反馈
 - 维护支持文档
 - 提供问题解决方案
 
 ### 3. 数据分析
+
 - 监控使用数据
 - 分析用户行为
 - 优化功能设计
@@ -196,11 +212,11 @@ zip -r my-extension.zip * -x "*.git*" -x "node_modules/*"
 ---
 
 **提示**：发布过程中如遇到问题，可以：
+
 1. 查看官方文档
 2. 咨询开发者社区
 3. 联系商店支持
 4. 参考成功案例
-
 
 ## 结语
 
